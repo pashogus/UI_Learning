@@ -1,0 +1,86 @@
+onclick="document.getElementById('demo').style.fontSize='35px'" - 
+
+onclick="document.getElementById('myImage').src='pic_bulbon.gif'" -- html src attribute
+**********
+
+type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"' --- html content 
+This statement tells the browser to write "Hello JavaScript!"" inside an HTML element with id="demo":
+ 
+ 
+<p>hello</p>
+<p id="demo"></p>  
+<script>
+type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"' 
+</script>
+
+o/p
+hello
+HelloJavascript
+
+***********
+document.getElementById("demo").style.display = "none"; - hide html elements
+
+****************
+<p id="demo" style="display:none">Hello JavaScript!</p>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>  -- displays block with id=demo
+
+******************
+
+
+Output Methods
+ - inner HTML
+ - document.write
+ -window.alert
+ - console.log
+
+type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'
+
+The document.write() method should only be used for testing.
+<script>
+document.write(5 + 6);   -- output in screen
+</script>
+
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;  diaplays 11 inside html element
+</script>
+
+<script>
+console.log(5 + 6);   -- diplays 11 in console
+</script>
+
+<script>
+window.alert(5 + 6);   -- popup with output 11
+</script>
+
+***************
+
+White Space-- js ignores white spaces, you can add it for readability
+
+**************
+Arrays
+
+
+
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;    o/p -- saab,volvo,bmw
+</script>
+
+
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars[0];  o/p -- saab
+</script>
+
+
+<script>
+var person = {firstName:"John", lastName:"Doe", age:46};
+document.getElementById("demo").innerHTML = person["firstName"];  o/p -- john 
+</script>
+
+************************
+
+Difference between tag and element 
+
+<p id="demo">sdfasdf</p>   -- element   = openong tag + content + closing tag

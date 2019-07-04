@@ -1,0 +1,14 @@
+more than one sytle inline?
+what is  a different beetween id and class?
+   why id and Class -- since both were doing the same 
+   
+   
+   
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128"> -- this is workign but not style , style is not appearing when using more than one style
+
+
+adding scrit inside p tag,, console.log inside p tag is not accepted?
+
+javascript literals ?
+
+Never use document.write() after the document is loaded. It will overwrite the document.
