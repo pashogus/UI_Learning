@@ -1,0 +1,8 @@
+#borderstylecss{
+border:5px solid grey;
+padding-left: 30px;
+}
+.contentcss{
+color: white;
+font-size:25px;
+font-family:Times New Roman;

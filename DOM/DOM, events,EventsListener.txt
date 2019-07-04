@@ -1,0 +1,52 @@
+DOM -- document Object Model
+
+methods  --- actions -- action you do -- add or delete element 
+Properties --- values -- can get and set values -- changinh conent of html elemet
+
+
+document.getElementById("demo").innerHTML = "Hello World!";
+getElementById( -- methods
+innerHTML -- property
+
+
+
+
+****************************************************************************************************
+
+Events
+
+- onclick
+- onload  - browser type and browser version,deal with cookies.on load of teh page
+-onunload  	
+- onchange --  combination with validation of input fields. 
+- onmouseover
+- onmouseout
+- onmousedown
+- onmouseout
+
+
+*******************************************************************************************
+
+Event Listener
+
+events needs to be wore as click, mouseover,mouseout 
+
+syntax -- element.addEventListener(event, function, useCapture);
+
+
+case1:  event in the element level
+<button id="myBtn" onclick="displayDate()">Try it</button>
+<script>
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+
+Case2: event handler attached to the element
+<button id="myBtn">Try it</button>
+<script>
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+</script>
