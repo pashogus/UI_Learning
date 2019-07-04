@@ -1,0 +1,101 @@
+jquery 1 -- will work ie versions below 8
+jquery 2 -- work in all browsers
+
+*********************************************
+
+ selector
+ 
+ * # - get element by id
+ * $ -- jquery
+ * $(#div1).html -- docuemnt.getelementbyid().innerhtml
+ 
+**********************************************
+
+id1= button1   ==  jquery('#button1').click(function())
+document.getelementbyid('button1').eventlistener(click,function())
+
+sample
+
+<script>
+jquery(docuemnt).ready(function(){
+jquery('#button').click(function(){
+alert('hello');
+});
+});
+</script>
+
+<script>
+$(docuemnt).ready(function(){
+$('#button').click(function(){
+alert('hello');
+});
+});
+</script>
+
+
+<script>
+$(function(){
+$('#button').click(function(){
+alert('hello');
+});
+});
+</script>
+
+&&&&&&&&&& all the three were same &&&&&&&&&&&
+jquery(docuemnt).ready(function(){});
+$(docuemnt).ready(function(){});
+$(function(){});
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+if you dont use the $(document).ready() event , and palce the script before the element in which you are tryong to do the manipulation, sciprt will not work(load events will not get added to the elements )
+
+
+no docuemnt.ready -- so script will not work.......
+<script>
+<!----- $(docuemnt).ready(function(){ --- say as commented>
+$('#button').click(function(){
+alert('hello');
+});
+});
+</script>
+<p id="button">heloo <p>   (!---- element placed after the script but without docuemknt.ready ----)
+
+   possible solutions  to avoid this.....
+   
+   * place the script after the element 
+   * place the script inside $(document).ready()
+   *place teh script at the end of the body tag
+
+
+########################################################
+
+$(docuemnt).ready() -- fires afterr the DOM loaded , html contetns, not images , css etc....  ** Usually recmmended to write javascript when dealing with elemts
+$(window).load()   -- recomenedd when dealing with images, css etc...
+
+<html>
+<head>
+<script> 
+$(document).ready(function(){
+alert("Hi 1")}
+);
+$(window).load(function(){
+alert("hi 2")
+});
+<script>
+</head>
+<body>
+</body>
+</html>
+
+
+when we hit thi page -- we get "hi 2" first and then "hi 1"  - since document.ready will load first and window.load will load afterwords.....
+
+
+############################################### 
+
+
+
+
+
+
+
