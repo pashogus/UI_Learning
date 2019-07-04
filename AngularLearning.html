@@ -1,0 +1,126 @@
+<!doctype html>
+<HTML ng-app="pashogus">
+<head>
+<!-- use uncompressed version of angular.js to see the error in redable format in  developer tool console, if we are using minified version the error message is encoded , we need to open
+the link to the error -->
+<script src="angular.min.js"></script>
+<script src="AngularCustomScript.js"></script>
+</head>
+<!-- ng-app is the startting port of Angular JS Application -->
+<!-- pashogus is the module name , adding module name to ng-app directive, angular js will bootstap the application with that module-->
+<body >
+<section>
+<div>
+<!-- Bindign Expression {{ }} -->
+10+20 = {{10 + 30 }}
+</div>
+<div>
+ {{ {name:'Pashogus', Age :'24'}.name }}
+</div>
+<div>
+<!-- Array position starts with Zero-->
+ {{ ['hello','how','are','you'][3] }}
+</div>
+<!-- attaching controller to ng-controller directive-->
+</section>
+<br>
+<section>
+<div ng-controller="mycontrol">
+<!-- message is the property attached to the scopr object , usign binding expression we are retriving it -->
+{{message}}
+</div> 
+</section>
+<br><br>
+<!-- Controller has JSON object atatched to the scope object -->
+<section>
+<div ng-controller="controller1">
+<!-- message is the property attached to the scope object , usign binding expression we are retriving it -->
+<!-- if property name is mispelled say instead of name if we use nam (if we missed e) angular will not give any error , and you will not able to retrive the property value of the model-->
+{{employee.name}}
+<!-- ng - src is used instead of src, becaue to avaoid 404 error when DOM is parsed -->
+<img ng-src="{{employee.icon}}" alt="Hello" style="height:50px ; width=50px"/>
+</div>
+</section>
+<br>
+<br>
+<section>
+<div ng-controller="controller2">
+<table>
+<thead>
+<tr>
+<td>Name</td>
+<td>Gender</td>
+</tr>
+</thead>
+<tbody>
+<!--As we are iterating row values from JSON object , we are usign ng-repeat in tr tag
+Name 	Gender
+pashogus 	male 	
+shan 	male 	
+pranay 	male
+	-->
+<!-- 
+if we use ng-repeat in td , that it will repeat only for that name data and output wil be like below
+Name 	Gender
+>pashogus	>shan	>pranay 	
+-->
+<tr ng-repeat="iterator in employee1">
+<td>{{iterator.name}}</td>
+<td>{{iterator.gender}}</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<br><br>
+<section ng-controller="controller3">
+<select> 
+<option ng-repeat="country in  countries" value="{{country.name}}">{{country.name}}</option>
+</select>
+<ul> 
+  <li ng-repeat="country in countries">  <!--1st iteration list starts-->
+     {{country.name}} - index -{{$index}}
+            <ul>
+			<li ng-repeat="state in country.states"> <!--2st iteration list starts-->
+			{{state.name}} - index  {{$index}} , parentindex {{$parent.$index}}
+			<ul>
+			     <ul>
+			     <li ng-repeat="district in state.District">  <!--3rd  iteration list starts-->
+				{{district.name}} - index -{{$index}} , parentindex {{$parent.$index}}
+			     </li> <!--3rd  iteration list closure-->
+			     </ul>
+
+           
+    </li> <!--2st iteration list closure , so that second iteration value is availbale to third iteration--> 
+	</li>  <!--1st iteration list closure , so that 2first iteration will availble for 1st and 2nd iteration-->
+</ul>
+</ul>
+</ul>
+</section>
+
+<section ng-controller="controller4">
+<table>
+<thead>
+<tr>
+<td> Course</td>
+<td> like </td>
+<td> dislike </td>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="courses in cousrselist">
+<td> {{courses.name}} </td>
+<td> {{courses.like}} </td>
+<td> {{courses.dislike}} </td>
+</tbody>
+</table>
+</section>
+
+<Section>
+<p>Notes Below </p>
+<p> https://stackoverflow.com/questions/28593642/angularjs-dependant-dropdown-option-value <p>
+</section>
+</body>
+</HTML>

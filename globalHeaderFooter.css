@@ -1,0 +1,2572 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+ font-family: FontAwesome;
+ font-weight: normal;
+ font-style: normal;
+ src:url('//stgpub.agilent.com:7003/cs/agilent_fonts/icomoon.eot?96h3dp');
+ src:url('//stgpub.agilent.com:7003/cs/agilent_fonts/icomoon.eot?#iefix96h3dp') format('embedded-opentype'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/icomoon.woff?96h3dp') format('woff'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/icomoon.ttf?96h3dp') format('truetype'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/icomoon.svg?96h3dp#icomoon') format('svg');
+}
+@font-face {
+ font-family: 'robotoregular';
+ src: url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-regular/roboto-regular.eot');
+ src: url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-regular/roboto-regular.eot?#iefix') format('embedded-opentype'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-regular/roboto-regular.woff2') format('woff2'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-regular/roboto-regular.woff') format('woff'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-regular/roboto-regular.ttf') format('truetype'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-regular/roboto-regular.svg#robotoregular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'robotomedium';
+ src: url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-medium/roboto-medium.eot');
+ src: url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-medium/roboto-medium.eot?#iefix') format('embedded-opentype'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-medium/roboto-medium.woff2') format('woff2'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-medium/roboto-medium.woff') format('woff'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-medium/roboto-medium.ttf') format('truetype'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-medium/roboto-medium.svg#robotomedium') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'roboto_condensedlight';
+ src: url('//stgpub.agilent.com:7003/agilent_fonts/roboto-light/robotocondensed-light.eot');
+ src: url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-light/robotocondensed-light.eot?#iefix') format('embedded-opentype'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-light/robotocondensed-light.woff2') format('woff2'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-light/robotocondensed-light.woff') format('woff'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-light/robotocondensed-light.ttf') format('truetype'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-light/robotocondensed-light.svg#roboto_condensedlight') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'roboto_condensedbold';
+ src: url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-condensed/robotocondensed-bold.eot');
+ src: url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-condensed/robotocondensed-bold.eot?#iefix') format('embedded-opentype'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-condensed/robotocondensed-bold.woff2') format('woff2'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-condensed/robotocondensed-bold.woff') format('woff'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-condensed/robotocondensed-bold.ttf') format('truetype'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-condensed/robotocondensed-bold.svg#roboto_condensedbold') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'roboto_condensedregular';
+ src: url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-condensed-regular/robotocondensed-regular.eot');
+ src: url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-condensed-regular/robotocondensed-regular.eot?#iefix') format('embedded-opentype'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-condensed-regular/robotocondensed-regular.woff2') format('woff2'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-condensed-regular/robotocondensed-regular.woff') format('woff'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-condensed-regular/robotocondensed-regular.ttf') format('truetype'),  url('//stgpub.agilent.com:7003/cs/agilent_fonts/roboto-condensed-regular/robotocondensed-regular.svg#roboto_condensedregular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+body .globalHeader.affix-top{
+  position: absolute;
+  top: 0px;
+  min-width: 100%;
+  background-color: #0085D5;
+  background-color: rgba(0, 133, 213, 0.95);
+  z-index: 1000;
+}
+body .globalHeader.affix{
+  min-width: 100%;
+  background-color: #0085D5;
+  background-color: rgba(0, 133, 213, 0.95);
+  z-index: 1000;
+}
+header nav.top-nav ul li a span {
+    font-family: roboto_condensedregular !important;
+    font-size: 12px !important;
+    line-height: 1.4;
+	color:#EFEFF0;
+}
+.sr-only {
+	border: 0 none;
+	clip: rect(0px, 0px, 0px, 0px);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.globalHeaderContainer {
+	margin-left: auto;
+	margin-right: auto;
+	min-width:1025px;
+	max-width:1280px;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+}
+.globalHeaderContainer .globalHeaderContainer {
+	min-width: 0;
+	padding: 0;
+}
+list-unstyled, .nav {
+	margin-left: 0px;
+	padding-left: 0px;
+	list-style: none outside none;
+}
+.globalHeaderContainer > *, .col-full {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.top-nav {
+	padding-top: 4ex;
+	position: relative;
+	text-transform: uppercase;
+	text-align: right;
+}
+.logo img {
+	height: 53px;
+}
+.nav {
+	list-style: none outside none;
+}
+.top-nav .logo-wrap {
+	float: left;
+	margin: 0px;
+	font-size: 0px;
+	width:auto;
+}
+.top-nav *, .top-nav a {
+	color: #FFF;
+	box-sizing:border-box;
+}
+.top-nav ul {
+	display: block;
+	vertical-align: middle;
+	padding: 0px;
+	margin: 0px;
+	line-height: 53px;
+	list-style: none outside none;
+}
+.top-nav ul li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 11px;
+	margin-top:0px
+}
+@-moz-document url-prefix() {
+ .top-nav li {
+ margin-right: 5px;
+ // margin-left:?17px !important;
+}
+}
+.top-nav ul li a:first-child {
+	margin-left: 1.5em;
+}
+.top-nav ul li a {
+	display: block;
+	font-size: 11px;
+}
+.primary-nav .spark {
+	display: inline-block;
+	float: left;
+	height: 53px;
+	transition: width 250ms ease 0s;
+	width: 0;
+}
+.affix .primary-nav {
+	background-position: 10px 5px;
+}
+.affix .primary-nav .spark {
+	width: 53px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	color: inherit;
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	line-height: 100%;
+}
+.caret {
+	border-left: 5px solid rgba(0, 0, 0, 0);
+	border-right: 6px solid rgba(0, 0, 0, 0);
+	border-top: 6px solid;
+	display: inline-block;
+	height: 0;
+	margin-left: 1px;
+	vertical-align: middle;
+	width: 0;
+}
+.primary-nav {
+	height: 53px;
+	margin: 0px -1px;
+	background:url(//stgpub.agilent.com:7003/cs/agilent_images/icon-agilent-spark-1x.png) no-repeat scroll -60px 5px transparent;
+	transition: #3A6EA5 250ms ease 0s;
+}
+.primary-nav > li {
+  padding: 0px 0.4em;
+  display: inline-block;
+  margin-bottom: 0px !important;
+  float: left;
+  margin-top: 0px;
+  padding-right: 30.5px;
+}
+.primary-nav > li > a {
+  position: relative;
+  display: block;
+  line-height: 53px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+  font-weight: normal;
+  font-family: roboto_condensedbold, Arial, Helvetica, sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-right: 0 !important;
+  outline:none !important;
+}
+.primary-nav > li > a.collapsed:before {
+	content: none;
+}
+.primary-nav > li > a:before, .primary-nav > li > a.collapsed.active:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-left: 0px;
+  bottom: -1px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0px 11px 10px;
+  border-color: transparent transparent #FFF;
+  right: 0;
+  margin: auto;
+}
+.primary-nav > li:nth-last-child(3) {
+  padding-right: 21px;
+}
+.primary-nav > li:nth-last-child(2) {
+  padding-right: 5px;
+}
+.primary-nav > li > a.search-trigger:after {
+	background: url(//stgpub.agilent.com:7003/cs/agilent_images/icon-search-1x.png) no-repeat scroll center center rgba(0, 0, 0, 0);
+	content: "";
+	display: inline-block;
+	width: 3ex;
+	height: 7ex;
+	float: left;
+	margin-right: 0.5em;
+}
+.primary-nav > li:last-child {
+	float: left;
+	margin-right: 0;
+}
+#nav-accordion {
+	position: relative;
+	clear: both;
+}
+#nav-accordion .collapse-close {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	max-height: 0px;
+	background-color: #000;
+	opacity: 0;
+	transition: opacity 250ms ease 0s;
+}
+#nav-accordion .collapse-close.open {
+	max-height: none;
+	opacity: 0.4;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+}
+#nav-accordion .nav-dropdown {
+	background-color: #FFFFFF;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+.collapse.in {
+	display: block;
+	width:100%;
+}
+a {
+	color: #0085D5;
+	text-decoration: none;
+}
+a:hover {
+	cursor: pointer;
+}
+#nav-accordion .nav-dropdown .page .globalHeaderBreadcrumb:before {
+	content: none;
+}
+.globalHeaderBreadcrumb:before {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-bottom: 1px solid #0085d5;
+	content: "";
+	display: block;
+	height: 22.4px;
+	left: 0;
+	margin-top: -1ex;
+	padding: 1ex;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	content: "";
+}
+.globalHeaderBreadcrumb > li {
+	padding: 0px;
+	margin: 0px;
+	font-family: robotoregular, Arial, Helvetica, sans-serif !important;
+	font-size:14px !important;
+	display: inline-block;
+}
+.globalHeaderBreadcrumb {
+	background-color: transparent;
+	border-radius: 0px;
+	padding: 1ex 1.5em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	list-style: none outside none;
+}
+.globalHeaderBreadcrumb > .active {
+	color: #414141;
+}
+#nav-accordion .nav-dropdown .page .globalHeaderBreadcrumb {
+	border-bottom: 1px solid #F4F3F1;
+	color: inherit;
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 130%;
+	margin: 1ex 0.4em;
+	padding-left: 0;
+	padding-right: 0;
+}
+.globalHeaderBreadcrumb > li + li:before {
+	color: #0085D5;
+	display: inline;
+	padding: 0 2px;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	content: "\e60e";
+	vertical-align: middle;
+}
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: height 0.35s ease;
+	transition: height 0.35s ease;
+}
+.collapse {
+	display: none;
+}
+#nav-accordion .nav-dropdown .page {
+	display: none;
+}
+#nav-accordion .nav-dropdown .page.active {
+	display: block;
+}
+#nav-accordion .nav-dropdown .page .next {
+	margin-bottom: 20px;
+}
+.globalHeaderContainer > .nav {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+#nav-accordion .nav-dropdown .page h6 {
+	padding: 1ex 0.5em;
+	padding:0px;
+}
+h6, .h6 {
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin:0;
+}
+.leftNavDisplay {
+	display:block;
+}
+h4, .h4 {
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-size: 21px;
+}
+* {
+	-moz-: border-box;
+}
+.globalHeaderBtn {
+	display: inline-block;
+	margin-bottom: 0px;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	font-size: 14px;
+	line-height: 1.4;
+	border-radius: 0px;
+	-moz-user-select: none;
+	font-family: robotomedium, Arial, Helvetica, sans-serif !important;
+	padding: 8px 1em;
+	outline: medium none !important;
+}
+.globalHeaderBtn.globalHeaderBtn-link {
+	padding-left: 0px;
+	padding-right: 0px;
+	box-shadow: none;
+}
+.globalHeaderBtn-link:hover, .globalHeaderBtn-link:focus {
+	color: #005589;
+	text-decoration: underline;
+	background-color: transparent;
+}
+.item-collection > header > .heading small {
+	position: absolute;
+	right: 0.75em;
+}
+h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 small {
+	font-size: 100%;
+}
+p, ul, dl, ol, .pagination, .cta, fieldset, form {
+	margin: 2ex 0 3ex;
+}
+/*End*/
+/*Styles for Footer*/
+footer a {
+	color: #808A8E;
+}
+.col-half, .col-third, .col-quarter, .col-sixth {
+	display: inline-block !important;
+	min-height: 19px;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	margin-right: -0.3em;
+	vertical-align: top;
+ 	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+#footer {
+	background-color:rgb(34, 34, 34);
+	background-color: #222222;
+	display:block;
+	clear: both;
+}
+address {
+	margin-bottom: 22px;
+	font-style: normal;
+	line-height: 1.4;
+}
+#footer a {
+	color: #B2B2B2;
+}
+#footer .footer-nav {
+	padding-bottom: 4ex;
+	padding-top: 4ex;
+	padding-left: 10px;
+	text-align:left !important;
+}
+#footer .footer-nav .agilent-details {
+	float: right;
+	border-left: 2px dotted #808080;
+	padding-left: 2em;
+	width: 310px;
+}
+#footer .footer-nav .agilent-details .utility .tagline {
+	color: #FFF;
+	font-size: 90%;
+	padding-left: 64px;
+	margin-top: -1ex;
+}
+.tagline {
+	margin-top: -1.6ex !important;
+}
+#footer .footer-nav .agilent-details .contact-info {
+	position: relative;
+	padding-left: 4em;
+	margin-bottom: 1em;
+}
+#footer .footer-nav .agilent-details .contact-info .about-icon {
+	left: 20px;
+}
+#footer .footer-nav .agilent-details .contact-info .about-icon {
+	color: #FFFFFF;
+	font-size: 20px;
+	left: 16px;
+	position: absolute;
+	top: 5px;
+}
+.fa {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+}
+#footer .footer-nav .agilent-details .contact-info p {
+	color: #B2B2B2;
+	font-size: 85%;
+	margin: 0px;
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+}
+#footer .footer-nav .footer-links dd {
+	font-size: 85%;
+	margin: 0;
+	line-height: 200%;
+}
+.social {
+	background-color: #000000;
+	line-height: 24px;
+	padding-bottom: 1ex;
+	padding-top: 1ex;
+	overflow: auto;
+	width: 100%;
+}
+#footer .social .rights-terms-policy {
+	color: #808080;
+	font-size: 80%;
+}
+#footer .social > .globalHeaderContainer > * {
+	margin: 0 -0.3em 0 0;
+	max-width: none;
+}
+.col-third {
+	width:33%;
+}
+#footer a {
+	color: #B2B2B2;
+}
+#footer .footer-nav .footer-links dl {
+	padding-right: 1.5em;
+	margin-top:0px !important;
+	width:auto;
+}
+#footer .footer-nav .footer-links {
+	padding: 0;
+}
+#footer .footer-nav .footer-links dt {
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	margin-top: 1ex;
+	margin-bottom: 1ex;
+	color: #FFF;
+}
+#footer .social .social-links li a {
+	font-size: 24px;
+	text-decoration: none;
+}
+#footer .social .social-links li a {
+	font-size: 24px;
+	text-decoration: none;
+}
+#footer .social .social-links li {
+	display: inline-block;
+	margin: 0 8px;
+}
+#footer a {
+	color: #b2b2b2;
+        font-family:robotoregular;
+}
+.fa {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.fa-facebook-square:before {
+	content: "\e614";
+}
+.fa-facebook:before {
+	content: "\e614";
+}
+.fa-twitter-square:before {
+	content: "\e623";
+}
+.fa-twitter:before {
+	content: "\e623";
+}
+.fa-youtube:before {
+	content: "\e625";
+}
+.fa-youtube-square:before {
+	content: "\e625";
+}
+.fa-linkedin:before {
+	content: "\e61a";
+}
+.fa-linkedin-square:before {
+	content: "\e61a";
+}
+.fa-pinterest:before {
+	content: "\e61e";
+}
+.fa-pinterest-square:before {
+	content: "\e61e";
+}
+.fa-google-plus-square:before {
+	content: "\e618";
+}
+.fa-google-plus:before {
+	content: "\e618";
+}
+.mapIcon {
+	background:url(//stgpub.agilent.com:7003/cs/agilent_images/footer_icon_location.png) no-repeat;
+	width:18px;
+	height:24px;
+}
+.mailIcon {
+	background:url(//stgpub.agilent.com:7003/cs/agilent_images/footer_icon_email.png) no-repeat;
+	width:18px;
+	height:13px;
+}
+.phoneIcon {
+	background:url(//stgpub.agilent.com:7003/cs/agilent_images/footer_icon_phone.png) no-repeat;
+	width:18px;
+	height:17px;
+}
+.globalHeaderContainer {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width:1240px;
+}
+/*Media query*/
+@media (min-width: 1200px) {
+ .globalHeaderContainer {
+ max-width: 1240px;
+}
+}
+/*End of media query*/
+
+.globalHeaderBtn-default {
+	background-color: #FFFFFF;
+	border-color: #F4F3F1;
+	color: #333333;
+}
+.globalHeaderBtn.globalHeaderBtn-default {
+	color: #0085D5;
+}
+.col-half {
+	width: 50%;
+}
+.globalHeaderBtn-link {
+	border-radius: 0;
+	font-weight: 200;
+	color: #0085d5;
+	cursor: pointer;
+}
+.globalHeaderBtn-link, .globalHeaderBtn-link:active, .globalHeaderBtn-link[disabled], fieldset[disabled] .globalHeaderBtn-link {
+	background-color: transparent;
+	box-shadow: none;
+}
+.globalHeaderBtn-link, .globalHeaderBtn-link:hover, .globalHeaderBtn-link:focus, .globalHeaderBtn-link:active {
+	border-color: rgba(0, 0, 0, 0);
+}
+.globalHeaderBtn:active, .globalHeaderBtn.active {
+	outline: 0px none;
+	background-image: none;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset;
+}
+.globalHeaderBtn-default:hover, .globalHeaderBtn-default:focus, .globalHeaderBtn-default:active, .globalHeaderBtn-default.active, .open .dropdown-toggle.globalHeaderBtn-default {
+	color: #333;
+	background-color: #EBEBEB;
+	border-color: #D9D6CF;
+}
+.globalHeaderBtn.globalHeaderBtn-default.active {
+	border-color: #0085D5 !important;
+}
+.globalHeaderBtn.globalHeaderBtn-default {
+	color: #0085D5;
+}
+.globalHeaderBtn-default:active, .globalHeaderBtn-default.active, .open .dropdown-toggle.globalHeaderBtn-default {
+	background-image: none;
+}
+.nav-tabs > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-right: 2px;
+	line-height: 1.4;
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	border-color: #ECEBE8 #ECEBE8 #DDD;
+	border-radius: 0px;
+}
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+	text-decoration: none;
+	background-color: #ECEBE8;
+}
+.nav-tabs > li {
+	position: relative;
+	display: block;
+	float: left;
+	margin-bottom: -1px;
+}
+.nav li {
+	margin-top: 0px;
+	margin-bottom: 1ex;
+}
+ @media (min-width: 850px) {
+ .navbar-right .dropdown-menu {
+ left: auto;
+ right: 0;
+}
+ .navbar-right .dropdown-menu-left {
+ left: 0;
+ right: auto;
+}
+}
+@-ms-viewport {
+ width: device-width;
+}
+@media (min-width: 850px) {
+ .lead {
+ font-size: 16px;
+}
+}
+/*Commnetd for headfoot*/
+
+@media print {
+* {
+	text-shadow: none !important;
+	color: #000 !important;
+	background: transparent !important;
+	box-shadow: none !important;
+}
+a,  a:visited {
+	text-decoration: underline;
+}
+a[href]:after {
+	content: " (" attr(href) ")";
+}
+abbr[title]:after {
+	content: " (" attr(title) ")";
+}
+ a[href^="javascript:"]:after,  a[href^="#"]:after {
+ content: "";
+}
+pre,  blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid;
+}
+thead {
+	display: table-header-group;
+}
+tr,  img {
+	page-break-inside: avoid;
+}
+img {
+	max-width: 100% !important;
+}
+p,  h2,  h3 {
+	orphans: 3;
+	widows: 3;
+}
+h2,  h3 {
+	page-break-after: avoid;
+}
+select {
+	background: #fff !important;
+}
+.navbar {
+	display: none;
+}
+.table td,  .table th {
+	background-color: #fff !important;
+}
+.globalHeaderBtn > .caret,  .dropup > .globalHeaderBtn > .caret {
+	border-top-color: #000 !important;
+}
+.label {
+	border: 1px solid #000;
+}
+.table {
+	border-collapse: collapse !important;
+}
+.table-bordered th,  .table-bordered td {
+	border: 1px solid #ddd !important;
+}
+}
+ @media (max-width: 991px) {
+ #footer {
+min-width: 1025px;
+}
+ .homesocialBarDiv {
+ background-color: #0085d5;
+ clear: both;
+ height: 58px;
+ margin: 0 auto;
+ min-width: 849px;
+ overflow: hidden;
+/* width: 1200px; */
+    }
+}
+ @media (max-width: 991px) {
+ body {
+       min-width: 1025px;
+    }
+}
+@media (max-width: 994px) {
+ .primary-nav > li > a {
+ font-size:13px;
+ margin-right:8px;
+}
+}
+@media only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi) {
+ .primary-nav {
+ background-image:url(//stgpub.agilent.com:7003/cs/agilent_images/icon-agilent-spark-2x.png);
+ background-size: 40px;
+}
+}
+ @media only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi) {
+ .primary-nav > li > a.search-trigger::after {
+ background-image: url(//stgpub.agilent.com:7003/cs/agilent_images/icon-search-2x.png);
+ background-size: 24px;
+}
+}
+@media (max-width: 991px) {
+ #nav-accordion .collapse-close {
+ position: static;
+ width: 0;
+ height: 0;
+}
+}
+.coloum-third {
+	width: 25%;
+}
+.seeAll {
+	float:right;
+	color:#2282C9;
+	font-size:11px;
+	margin-bottom:10px;
+
+}
+.seeAll a:hover {
+	text-decoration:none;
+}
+.globalHeaderBtn:active, .globalHeaderBtn.active {
+	outline: none;
+	background-image: none;
+	box-shadow: none !important;
+	color:#202020;
+	font-family: robotomedium, Arial, Helvetica, sans-serif;/*font-size: 14px;*/
+}
+div#nav-accordion {
+	position: relative !important;
+	min-width: 765px !important;
+/*border-bottom: 2px solid #0085D5;*/
+}
+#footer {
+       padding: 0;
+}
+#footer .footer-nav .agilent-details {
+	width: 285px;
+}
+.col-sixth {
+	width: 15.5% !important;
+}
+.primary-nav > li > a {
+	margin-right: 2px !important;
+}
+
+
+/*Styles for iphone*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+ #footer .footer-nav .footer-links dd {
+ font-size: 85%;
+ margin: 0;
+ line-height: 43%;
+}
+ p {
+ max-width:100%;
+}
+ body {
+ font-size:8px !important;
+}
+ .lead {
+ font-size: 8px !important;
+}
+ #footer .footer-nav .footer-links dl {
+ width: 20%;
+}
+ p, li, dd, dt {
+ max-width: 80% !important;
+}
+ .globalHeaderBtn {
+ font-size:8px !important;
+}
+}
+.loading {
+	position: fixed;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background:url(//stgpub.agilent.com:7003/cs/agilent_images/loader2.gif) 50% 50% no-repeat;
+}
+.fa-search:before {
+	content: "\e620";
+	font-size:14px;
+	float:left;
+	line-height: 0.5;
+}
+header> ol.globalHeaderBreadcrumb.globalHeaderContainer {
+	padding: 1ex 21px;
+}
+header> ol.globalHeaderCreadcrumb li a {
+	color:#0080CB !important;
+}
+header> ol.globalHeaderBreadcrumb li {
+	color:#5A6772 !important;
+}
+#nav-accordion .next li {
+	padding-top: 1ex;
+	padding-bottom: 1ex;
+}
+/*Changes for saphier header*/
+.top-nav ul li a:first-child, .top-nav ul li a:first-child:hover {
+	text-decoration: none;
+	/*color: #333333 !important;
+    font-weight: bold;*/
+    margin-left: 0px !important;
+	padding: 5px !important;
+}
+.top-nav ul li ul li a:first-child, .top-nav ul li ul li a:first-child:hover {
+	color: #0085d5 !important;
+	font-weight:normal;
+	font-family:robotoregular;
+}
+.dropDownTriangle:before {
+	content: "\e609";
+	display: inline-block;
+	font-family: FontAwesome;
+	cursor: pointer;
+	float: right;
+	height: 5px;
+	margin-left: 0px;
+	line-height: 15px;
+	width: 9px;
+	font-size: 17px;
+}
+.buyImg {
+	margin-left: 1% !important;
+	padding: 0.3% 0 0 1% !important;
+	vertical-align: top;
+}
+.displayNone {
+	display:none;
+}
+.buyImg {
+	float:left !important;
+	margin-top: 0px !important;
+}
+p.cartItem {
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	line-height: 4px;
+	text-align: center;
+	margin: 0px !important;
+	position: relative;
+	top: 5px;
+}
+.buySeperator {
+	margin-top: 16px;
+	float: left;
+}
+.homeSearchBox {
+	background-color: #FFFFFF !important;
+	border: 1px solid #828282;
+	color: #666666;
+	float: right;
+	height: 25px;
+	width: 315px;
+	padding-left: 5px;
+	margin:0;
+}
+.homeSearchImg {
+	float: right;
+	margin-left: 1%;
+	margin-top: 0.2%;
+}
+.top-nav ul {
+	line-height: 20px;
+}
+.primary-nav {
+	width: 100%;
+	float: left;
+}
+.top-nav {
+	padding-top: 1ex !important;
+}
+.topNavSubLink {
+	background-color: #EEE;
+	border: medium none #FFF;
+	position: absolute;
+	z-index: 4;
+	width: 15%;
+	box-shadow: 0px 3px 2px 1px rgba(136, 136, 136, 0.5);
+	float: left;
+	margin-top: 0.6%;
+	color: #0085d5 !important;
+	padding-left: 13px;
+	clear:both !important;
+	display: block;
+	text-align: left;
+	padding-bottom: 10px !important;
+	padding-top: 10px !important;
+}
+.topNavSubLink li a {
+	line-height:15px;
+	text-transform: none !important;
+}
+.activeTopNav {
+	background-color:#EEEEEE !important;
+	color:#000 !important;
+}
+/*Style for Shaphier footer*/
+.homesocialBarDiv {
+	background-color: #0085d5;
+	clear: both;
+	height: 58px;
+	margin: 0 auto;
+	min-width: 100%;
+	overflow: hidden;
+	/* width: 1200px;*/
+    padding: 0;
+}
+.homeSocialBar ul {
+	margin: 0px !important;
+	padding: 0 9px !important;
+}
+.homeSocialBar ul li {
+	width:auto !important;
+	display:inline !important;
+}
+.toprtnav {
+	color: #EFEFF0 !important;
+	float: left;
+}
+.top-nav ul li a.globalHeaderBtn {
+	height: 30px;
+}
+.globalHeaderContainer.homeSocialBar {
+	padding: 0 10px;
+}
+.footer-links>.col-sixth>span {
+	color: #aaaaaa;
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	float: left;
+	margin-bottom: 13px;
+}
+.footer-links ul {
+	margin:0px !important;
+	padding:0px !important;
+}
+.footer-links ul li {
+  width: 100%;
+  clear: both;
+  padding-left: 0px !important;  
+  display: inline-block;
+  text-transform: none !important;
+  font-weight: normal !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.legal {
+	width:100%;
+	margin-top: 3.2%;
+	margin-left: 10px;
+}
+.copyRight {
+	float: right;
+	color: #999999 !important;
+	font-size: 11px !important;
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+.legal ul {
+	width: 50%;
+}
+.legal ul li {
+	list-style: none;
+	display: inline !important;
+	float: none !important;
+}
+.legal ul li a {
+	font-size: 11px !important;
+}
+.legal ul li a:hover, .legal ul li a:active {
+	text-decoration:none;
+}
+.aglientLogoTxt {
+	float:left;
+}
+.logo img {
+	float:left !important;
+}
+/*Footer Css - Added on march 05 start*/
+.divClear {
+	clear: both;
+}
+.keysightTxt {
+	color: #999999;
+	font-weight: normal;
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-size: 10px !important;
+	width: 84%;
+}
+.fl {
+	float:left;
+}
+.otherSite a, .blue {
+	color: #0085d5 !important;
+	text-decoration: none;
+}
+.utility {
+	height:70px;
+}
+/*Footer Css - Added on march 05 End*/
+.aboutAglientLine, .resoursesLine, .shoppingLine, .supportLine {
+	color: #CFCFCF !important;
+	background-color: #cfcfcf !important;
+	border: none !important;
+	height: 1px !important;
+	float: left;
+	margin-bottom: 8px;
+	margin-top: 5px !important;
+	width: 100%;
+}
+.seperatorLine {
+	color: #cfcfcf !important;
+	background-color: #cfcfcf !important;
+	border: none !important;
+	float: left;
+	height: 1px !important;
+	width: 75%;
+	margin: 0.5em auto;
+}
+.footer-links >.col-sixth a {
+	color: #FFFFFF !important;
+	line-height: 15px;
+	text-decoration: none;
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	margin: 3px 0px;
+	display:inline-block;
+	text-transform: capitalize;
+}
+.topNavSubLink li {
+	width:94%;
+}
+.topNavSubLink li a {
+	text-transform:capitalize !important;
+	font-size:12px !important;
+}
+.topNavSubLink li a:hover, .topNavSubLink li a:focus {
+	text-decoration:underline !important;
+}
+footer a.pull-right {
+	color: #808A8E;
+	margin-top: 28px;
+	margin-bottom:25px;
+	font-family:robotoregular, Arial, Helvetica, sans-serif !important;
+	font-size:14px;
+}
+footer a.pull-left {
+	color: #0085D5;
+	margin-top: 28px;
+	margin-bottom:25px;
+}
+footer a.pull-left:hover, footer a.pull-right:hover, footer a.pull-left:active, footer a.pull-right:active, footer a.pull-left:focus, footer a.pull-right:focus {
+	text-decoration:none !important;
+}
+ @media (max-width: 991px) {
+ .homesocialBarDiv {
+ background-color: #0085d5;
+ clear: both;
+ height: 58px;
+ margin: 0 auto;
+ min-width: 1025px;
+ overflow: hidden;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+/* width: 1200px; */
+    }
+}
+ @media (max-width: 991px) {
+ header nav.top-nav ul li a span {
+ font-family:roboto_condensedregular, Arial, Helvetica, sans-serif !important;
+ font-size:12px !important;
+
+}
+ @media (min-width:1011px) and (max-width:1100px) {
+ .primary-nav > li > a {
+ margin-right: 1em;
+
+}
+}
+ @media (min-width:995px) and (max-width:1010px) {
+ .primary-nav > li > a {
+ margin-right: 0.5em;
+
+}
+}
+ @media (min-width: 1050px)and(max-width: 1124px) {
+ .affix .primary-nav > li > a {
+ margin-right: 1em;
+
+}
+}
+ @media (max-width: 1050px) {
+ .affix .primary-nav > li > a {
+ margin-right: 0.5em !important;
+
+}
+}
+ @media (min-width:995px) and (max-width:1010px) {
+ .affix .primary-nav > li > a {
+ margin-right: 0.3em;
+}
+}
+}
+/*4-may for header top right search bar */
+    .homeSearchImg {
+	margin-left:2%;
+	margin-right:0;
+	cursor: pointer;
+}
+.homeSearch {
+	width: 450px;
+	float: right;
+	margin: -30px -20px 0 0 !important;
+	text-align: left;
+	clear:left;
+}
+nav.top-nav > ul {
+	width: 97%;
+	margin: 0;
+}
+.homeSearchBox {
+	width: 319px;
+}
+nav.top-nav > ul {
+    margin: 0px;
+    float: right;
+    min-width: 414px;
+    width: auto !important;
+}
+.top-nav ul li#topRtNav1 {
+	margin:0;
+}
+.top-nav > ul > li {
+	float:left;
+	padding-right:3px !important;
+}
+/*----------RBE AUG APP-5944  added !important; and float---*/
+.topRtNav4Links p.name {
+	margin:0 !important;
+	float: left;
+}
+/*----------RBE AUG APP-5944  ---*/
+.topRtNav4Links>p.name>a ,.topRtNav4Links>p.name>a:hover{
+	 text-decoration: none;
+	color:#333333 !important;
+	font-weight:bold;
+	font-family: robotoregular, Helvetica, Arial, sans-serif;
+ 	cursor: context-menu;
+}
+#topRtNav4Links {
+	
+/*---RBE AUG APP-5994---width:13%-160px;padding:10px-7px*/
+	    width: 160px;
+    padding-right: 0px !important;
+}
+#MegaMenu-Buy{
+  padding-right: 0 !important;
+  margin-right: 0px;
+}
+/*header{
+ display:inline-block !important;
+}*/
+.activeTopNav a span {
+color:#000 !important;
+}
+#bin .partNo{
+  line-height: 20px;
+}
+#bin .partDescr{
+  line-height: 22px;
+}
+body header.affix .top-nav {
+  display: none;
+}
+body>header.affix {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+}
+body >div>header.affix {
+  position: fixed;
+  top: 0 !important;
+  width: 100%;
+}
+/*Style for hiding the myaccount on load*/
+#topRtNav4{
+display:none;
+margin-left:0px;
+}
+
+/*style for aligning login 
+#topRtNav{
+  
+  margin-left: -4px;
+} */
+
+@media (min-width: 1200px){
+.container {
+  max-width: 1240px;
+}
+}
+.container.homeSocialBar {
+  padding: 0 10px;
+}
+.top-nav ul li a.btn {
+  height: 30px;
+}
+/*newsroom*/
+.legacyrtdrpdwn {
+  margin-top:-10px !important;
+}
+.legacyCart{
+margin-top:10px !important;
+}
+/*For header Issues*/
+.top-nav ul li > a.btn {
+  text-align: left;
+  width: auto;
+ box-sizing:border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+
+}
+.top-nav h1.logo-wrap a.logo {
+ width: auto;
+  float: none;
+  margin-left: 0;
+}
+.footer-nav.container, .homeSocialBar.container{
+    margin: auto;
+  width: 1240px;
+  min-width: 849px;
+}
+#footer .utility .logo {
+    width: auto;
+  float: none;
+  margin-left: 0;
+}
+.globalHeaderContainer > .primary-nav{
+	margin-left: -6px;
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px){
+ header> ol.breadcrumb.container {
+padding:1ex 17px;
+
+}
+
+}
+
+ @media screen and (max-width: 1280px) {
+ header> ol.breadcrumb.container {
+padding:1ex 20px; 
+} }
+/* RBE DEC APP-11109 */
+.moreButton {
+    margin-bottom: 10px;
+    margin-left: 17px !important;
+    margin-top: 17px !important;
+    background-image: url(//stgpub.agilent.com:7003/cs/agilent_images/btn_more_EN_normal.png) !important;
+    background-repeat: no-repeat;
+    width: 68px !important;
+    height: 36px;
+    cursor: pointer;
+    float: left;
+}
+.moreButton:hover {
+    background-image: url(//stgpub.agilent.com:7003/cs/agilent_images/btn_more_EN_hover.png) !important;
+    background-repeat: no-repeat;
+    width: 68px !important;
+    height: 36px;
+	cursor: pointer;
+}
+/* RBE DEC APP-11109 ENDS */
+.moreButton a {
+  width: 68px;
+  height: 36px;
+}
+ /* *  {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}*/
+/*For genomics header*/
+.topContainer{
+padding-top:117px !important;
+}
+/*End*/
+/*Pagination Fix for ATG genomics*/
+#slides .pagination > li > a, #slides .pagination > li > span {
+  position: static;
+  float: left;
+  padding: 0;
+  margin-left: 0;
+  line-height: 17px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 0;
+}
+#slides .pagination > li:first-child > a, #slides .pagination > li:first-child > span,
+#slides .pagination > li:last-child > a,  #slides .pagination > li:last-child > span {
+   border-radius:0;
+}
+/*end*/
+.globalHeaderContainer .nav > li > a {
+    padding: 0px !important;
+}
+.globalHeaderContainer .nav > li > a:hover{
+background: none;
+text-decoration:underline;
+}
+
+/* Select Country MorButton -- Germany Start */
+
+
+.moreButtonDE {
+    margin-bottom: 10px;
+    margin-left: 17px !important;
+    margin-top: 17px !important;
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_DE_normal.png");
+	background-repeat:no-repeat;
+	width:68px !important;
+	height:36px;
+	cursor:pointer;
+	float:left;
+}
+.moreButtonDE:hover {
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_DE_hover.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+.moreButtonDE a{
+	width:68px;
+	height:36px;
+}
+
+/* Select Country MorButton -- Germany End */
+
+/* Select Country MorButton  -- Spain Start */
+
+.moreButtonES {
+    margin-bottom: 10px;
+    margin-left: 17px !important;
+    margin-top: 17px !important;
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_ES_normal.png");
+	background-repeat:no-repeat;
+	width:68px !important;
+	height:36px;
+	cursor:pointer;
+	float:left;
+}
+.moreButtonES:hover {
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_ES_hover.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+.moreButtonES a{
+	width:68px;
+	height:36px;
+}
+
+/* Select Country MorButton  -- Spain End */
+
+/* Select Country MorButton  -- France Start */
+
+.moreButtonFR {
+    margin-bottom: 10px;
+    margin-left: 17px !important;
+    margin-top: 17px !important;
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_FR_normal.png");
+	background-repeat:no-repeat;
+	width:68px !important;
+	height:36px;
+	cursor:pointer;
+	float:left;
+}
+.moreButtonFR:hover {
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_FR_hover.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+.moreButtonFR a{
+	width:68px;
+	height:36px;
+}
+
+/* Select Country MorButton  -- France End */
+
+/* Select Country MorButton  -- China Start */
+
+.moreButtonCH {
+    margin-bottom: 10px;
+    margin-left: 17px !important;
+    margin-top: 17px !important;
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_CH_normal.png");
+	background-repeat:no-repeat;
+	width:68px !important;
+	height:36px;
+	cursor:pointer;
+	float:left;
+}
+.moreButtonCH:hover {
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_CH_hover.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+.moreButtonCH a{
+	width:68px;
+	height:36px;
+}
+
+/* Select Country MorButton  -- china End */
+
+/* Select Country MorButton  -- Japan Start */
+
+.moreButtonJP {
+    margin-bottom: 10px;
+    margin-left: 17px !important;
+    margin-top: 17px !important;
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_JP_normal.png");
+	background-repeat:no-repeat;
+	width:88px !important;
+	height:36px;
+	cursor:pointer;
+	float:left;
+}
+.moreButtonJP:hover {
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_JP_hover.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+.moreButtonJP a{
+	width:68px;
+	height:36px;
+}
+
+/* Select Country MorButton  -- Japan End */
+
+/* Select Country MorButton  -- Korea Start */
+
+.moreButtonKR {
+    	margin-bottom: 10px;
+    	margin-left: 20px !important;
+   	margin-top: 15px;
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_KR_normal.png");
+	background-repeat:no-repeat;
+	width:88px !important;
+	height:36px;
+	cursor:pointer;
+	float:left;
+}
+.moreButtonKR:hover {
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_KR_hover.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+.moreButtonKR a{
+	width:68px;
+	height:36px;
+}
+
+/* Select Country MorButton  -- Korea End */
+
+/* Select Country MorButton  -- Vietnam Start */
+
+.moreButtonVI {
+    margin-bottom: 10px;
+    margin-left: 17px !important;
+    margin-top: 17px !important;
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_VT_normal.png");
+	background-repeat:no-repeat;
+	width:68px !important;
+	height:36px;
+	cursor:pointer;
+	float:left;
+}
+.moreButtonVI:hover {
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_VT_hover.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+.moreButtonVI a{
+	width:68px;
+	height:36px;
+}
+
+/* Select Country MorButton  -- Vietnam End */
+
+/* Select Country MorButton  -- Brasil Start */
+
+.moreButtonPT {
+    margin-bottom: 10px;
+    margin-left: 17px !important;
+    margin-top: 17px !important;
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_PT-BR_normal.png");
+	background-repeat:no-repeat;
+	width:68px !important;
+	height:36px;
+	cursor:pointer;
+	float:left;
+}
+.moreButtonPT:hover {
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_PT-BR_hover.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+.moreButtonPT a{
+	width:68px;
+	height:36px;
+}
+
+/* Select Country MorButton  -- Brasil End */
+
+/* Select Country MorButton  -- Russia Start */
+
+.moreButtonRU {
+    margin-bottom: 10px;
+    margin-left: 17px !important;
+    margin-top: 17px !important;
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_RU_normal.png");
+	background-repeat:no-repeat;
+	width:68px !important;
+	height:36px;
+	cursor:pointer;
+	float:left;
+}
+.moreButtonRU:hover {
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_RU_hover.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+.moreButtonRU a{
+	width:68px;
+	height:36px;
+}
+
+/* Select Country MorButton  -- Russia End */
+
+/* Select Country MorButton  -- Italy Start */
+
+.moreButtonIT {
+    margin-bottom: 10px;
+    margin-left: 17px !important;
+    margin-top: 17px !important;	
+       background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_IT_normal.png");
+	background-repeat:no-repeat;
+	width:68px !important;
+	height:36px;
+	cursor:pointer;
+	float:left;
+}
+.moreButtonIT:hover {
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_IT_hover.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+.moreButtonIT a{
+	width:68px;
+	height:36px;
+}
+
+/* Select Country MorButton  -- Italy End */
+
+
+/* Select Country MorButton  -- Taiwan Start */
+
+.moreButtonTW {
+    margin-bottom: 10px;
+    margin-left: 17px !important;
+    margin-top: 17px !important;
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_TW_normal.png");
+	background-repeat:no-repeat;
+	width:68px !important;
+	height:36px;
+	cursor:pointer;
+	float:left;
+}
+.moreButtonTW:hover {
+	background-image:url("//stgpub.agilent.com:7003/cs/home_images/btn_more_TW_hover.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+.moreButtonTW a{
+	width:68px;
+	height:36px;
+}
+
+/* Select Country MorButton  -- Taiwan End */
+.tt-dropdown-menu {
+    background: none repeat scroll 0% 0% #F2F6F9;
+    border: 2px solid #DCE4EC;
+    width: 321px;
+    right: 111px !important;
+    position: absolute !important;
+    top: 24px !important;
+    text-align: left;
+}
+.cartNum {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 8px;
+    text-align: center;
+    margin: 10px 0px 0px !important;
+    vertical-align: inherit !important;
+}
+#baiduImg {
+    width: 30px;
+    padding-bottom: 15px;
+}
+/*APP-3974*/
+.buySeperator{
+font-family: robotoregular,Helvetica,Arial,sans-serif !important;
+font-size: 14px !important;
+color: #202020 !important;
+font-weight: 200;
+}
+/*ends APP-3974*/
+
+/*---RBE JUNE APP-3959 starts--*/		
+@media print {		
+  a[href]:after {		
+    content: none !important;		
+  }		
+}		
+/*---RBE JUNE APP-3959 ends --*/
+
+
+/*APP-8926*/
+
+.ui-dialog-title{
+ font-family: robotoregular, Arial, Helvetica, sans-serif !important; 
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 3em 0 5px;
+}
+.ui-dialog .ui-dialog-titlebar {
+    cursor: default;
+    padding: 14px 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #edeff0;
+    padding-right: 17px;
+    margin: 0 !important;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-left: 19px !important;
+}
+.ui-dialog .ui-dialog-buttonpane button{
+    margin: 0.5em 0.2em 0.5em 0.95em;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    right: .3em;
+    top: 5px;
+    width: auto;
+    margin: -10px 0 0 0;
+    height: auto;
+    padding: 25px 1em;
+}
+.japanModal{
+   height: auto !important;
+    width:625px !important;
+}
+
+.japanModal .split.white p{
+  font-family: robotoregular, Arial, Helvetica, sans-serif !important;
+  width: 567px !important;
+font-size: initial;
+}
+
+
+
+.japanModal .split.white h4{
+     font-weight:bold;
+}
+.ui-dialog{
+  z-index:1001;
+}
+span.ui-dialog-title {		
+font-family: roboto_condensedlight !important;		
+font-size: 24px;		
+color: #303030;		
+}
+.ui-dialog .ui-dialog-content {
+    position: relative;
+    border: 0;
+    padding: .5em 1em;
+    background: none;
+    overflow: auto;
+    padding-left: 42px;
+}
+.ui-dialog .ui-dialog-titlebar {		
+padding-left: 36px !important;
+}
+
+
+/*APP-8926*/
+
+/* Added for japan pop-up */
+.ui-widget-header {
+    border: 1px solid #edeff0;
+    background-color: #edeff0;
+    color: #000;
+    font-weight: bold;
+    padding-left: 1.35em !important;
+}
+
+.ui-widget-content {
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+}
+
+
+
+/*for ATG and search page modal pop-up fixes */
+
+
+ .japanModalBox.ui-dialog   .japanModalBox.ui-dialog-buttonpane  .japanModalBox.ui-dialog-buttonset .btn-primary {
+//background-color: #0085D5;
+   // color: #FFFFFF ;
+    border-radius: 0;
+background-color: #0085D5;
+    border-color: #F4F3F1;
+}
+
+ .japanModalBox.ui-dialog {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    outline: 0;
+}
+
+ .japanModalBox.ui-dialog-buttonpane >  .japanModalBox button.btn-primary .ui-button-text-only > .japanModalBox.ui-button-text{
+padding:0px; 
+border:none;
+}
+  .japanModalBox.ui-state-hover {
+border:none;
+}
+
+ .japanModalBox.ui-dialog  .japanModalBox.ui-dialog-buttonpane  .japanModalBox.ui-dialog-buttonset  .japanModalBox.ui-button-text-only  .japanModalBox.ui-button-text{
+padding: 2px 4px 2px 4px;;
+border:none;
+}
+
+
+.japanModal .split.white p {
+
+font-size: initial;
+}
+
+.japanModal .split.white h4 {
+color:inherit;
+}
+
+ .japanModalBox.ui-dialog  .japanModalBox .ui-dialog-buttonpane {
+    padding: .4em 1em .4em .4em !important;
+}
+
+ .japanModalBox.ui-dialog .japanModalBox button.btn.btn-primary {
+margin-top: 0.5em;
+padding: 1ex 1em;
+}
+
+
+ .japanModalBox .ui-dialog  .japanModalBox .ui-state-default,  .japanModalBox.ui-widget-content .ui-state-default,  .japanModalBox.ui-widget-header .ui-state-default {
+font-weight:normal;
+}
+
+ .japanModalBox button.btn.btn-primary {
+    margin-top: 0.5em !important;
+padding: 1ex 1em;
+}
+
+
+ .japanModalBox .btn-primary:hover, .japanModalBox .btn-primary:focus,  .japanModalBox .btn-primary:active,  .japanModalBox .btn-primary.active,  .japanModalBox .open .dropdown-toggle.btn-primary{
+border-radius: 0px; 
+color: #ffffff;
+background-color: #0085D5;
+    border-color: #F4F3F1;
+}
+
+.japanModalBox .btn-primary{
+border-radius: 0px; 
+background-color: #0085D5;
+border-color: #F4F3F1;
+
+}
+
+/*modal pop-up box conflicts overrideen */
+
+.japanModalBox .ui-dialog .japanModalBox .ui-state-default, .japanModalBox.ui-widget-content .ui-state-default, .japanModalBox.ui-widget-header .ui-state-default {
+
+font-weight: normal;
+
+color: white !important;
+
+
+
+}
+
+
+/*.homeSearchBox::-webkit-input-placeholder {
+
+// color: rgb(155,166,176);
+
+// color:#e1e1e1;
+
+color : #cacaca;
+
+font-family:roboto_light, Arial, Helvetica, sans-serif !important;
+
+font-size: 12px !important;
+
+ 
+
+}
+
+.homeSearchBox:-moz-placeholder {
+
+    
+
+color : #cacaca;
+
+font-family:roboto_light, Arial, Helvetica, sans-serif !important;
+
+font-size: 12px !important;
+
+ 
+
+ 
+
+    
+
+}
+
+.homeSearchBox::-moz-placeholder {
+
+
+
+color : #cacaca;
+
+font-family:roboto_light, Arial, Helvetica, sans-serif !important;
+
+font-size: 12px !important;
+
+ 
+
+ 
+
+}
+
+.homeSearchBox:-ms-input-placeholder {
+
+
+
+color : #cacaca;
+
+font-family:roboto_light, Arial, Helvetica, sans-serif !important;
+
+font-size: 12px !important;
+
+ 
+
+ 
+
+}
+
+.homeSearchBox.searchPlaceHolder {
+
+    
+
+color : #cacaca;
+
+font-family:roboto_light, Arial, Helvetica, sans-serif !important;
+
+font-size: 12px !important;
+
+ 
+
+ 
+
+}
+
+/* for search box default text css */
+
+
+/*CR 026*/
+#nav-accordion .nav-dropdown .page .column-list> .ImgBrand{
+    text-align: -webkit-center !important;
+  
+}
+
+.ImgBrand {
+padding-top: 10000px !important;
+margin-top: -10000px !important;
+}
+
+#nav-accordion .nav-dropdown .column-list > .ImgBrand :first-child {
+    padding-right: 0em !important;
+    padding-top: 10px;
+}
+
+#nav-accordion .nav-dropdown .column-list > .ImgBrand {
+margin: auto;
+vertical-align: middle;
+    text-align: center;
+    align-content: center;
+}
+
+/*Cr 026 ends*/
+
+
+/*CR 026 - Starts*/
+.brandImg{
+  list-style: none;
+}
+.brandImg a{
+  text-decoration: none;
+}
+/* CR 026  - Ends*/
+
+/* RBE DEC APP-192 */
+ol.nav.next.column-list {
+	padding-left: 5px !important;
+}
+/* RBE DEC APP-192 Ends*/
+
+/* RBE DEC APP-3958 */
+span.homeSearchImg {
+    background-image: url("//stgpub.agilent.com:7003/cs/home_images/header_icon_search-EN.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 22px;
+    width: 101px;
+}
+span.homeSearchImgCH {
+    background-image: url("//stgpub.agilent.com/cs/home_images/header_icon_search-CH.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 22px;
+    width: 101px;
+}
+span.homeSearchImgTW {
+    background-image: url("//stgpub.agilent.com/cs/home_images/header_icon_search-TW.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 22px;
+    width: 101px;
+}
+span.homeSearchImgJP {
+    background-image: url("//stgpub.agilent.com/cs/home_images/header_icon_search-JP.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 22px;
+    width: 101px;
+}
+span.homeSearchImgKR {
+    background-image: url("//stgpub.agilent.com/cs/home_images/header_icon_search-KR.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 22px;
+    width: 101px;
+}
+span.homeSearchImgVN {
+    background-image: url("//stgpub.agilent.com/cs/home_images/header_icon_search-VN.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 22px;
+    width: 101px;
+}
+span.homeSearchImgBR {
+    background-image: url("//stgpub.agilent.com/cs/home_images/header_icon_search-PT-BR.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 22px;
+    width: 101px;
+}
+span.homeSearchImgRU {
+    background-image: url("//stgpub.agilent.com/cs/home_images/header_icon_search-RU.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 22px;
+    width: 101px;
+}
+span.homeSearchImgDE {
+    background-image: url("//stgpub.agilent.com/cs/home_images/header_icon_search-DE.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 22px;
+    width: 101px;
+}
+span.homeSearchImgFR {
+    background-image: url("//stgpub.agilent.com/cs/home_images/header_icon_search-FR.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 22px;
+    width: 101px;
+}
+span.homeSearchImgES {
+    background-image: url("//stgpub.agilent.com/cs/home_images/header_icon_search-ES.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 22px;
+    width: 101px;
+}
+span.homeSearchImgIT {
+    background-image: url("//stgpub.agilent.com/cs/home_images/header_icon_search-IT.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 22px;
+    width: 101px;
+}
+.homeSearchImg,.homeSearchImgCH,.homeSearchImgTW,.homeSearchImgJP,.homeSearchImgKR,.homeSearchImgVN,.homeSearchImgBR,.homeSearchImgRU,.homeSearchImgDE,.homeSearchImgFR,.homeSearchImgES,.homeSearchImgIT {
+	float: right;
+	margin-left: 1%;
+	margin-top: 0.2%;
+}
+.homeSearchImg,.homeSearchImgCH,.homeSearchImgTW,.homeSearchImgJP,.homeSearchImgKR,.homeSearchImgVN,.homeSearchImgBR,.homeSearchImgRU,.homeSearchImgDE,.homeSearchImgFR,.homeSearchImgES,.homeSearchImgIT {
+	margin-left:2%;
+	margin-right:0;
+	cursor: pointer;
+}
+
+span.buycart-img {
+    background-image: url("//stgpub.agilent.com:7003/cs/home_images/header_icon_cart.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 22px;
+    width: 24px;
+    margin-top: 10px;
+}
+/* RBE DEC APP-3958 ENDS*/
+
+/* RBE DEC APP-3958 */
+#homeSocialBar ul li:first-child {
+    float: left;
+}
+
+#homeSocialBar span.fb-img{
+    background-image: url("//stgpub.agilent.com:7003/cs/agilent_images/footer_social-3_icon-facebook.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 33px;
+	position: relative;
+    left: 3px;
+}
+#homeSocialBar span.ln-img{
+    background-image: url("//stgpub.agilent.com:7003/cs/agilent_images/footer_social-2_icon-linkedin.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 55px;
+	position: relative;
+    left: 6px;
+}
+#homeSocialBar span.twt-img{
+    background-image: url("//stgpub.agilent.com:7003/cs/agilent_images/footer_social-4_icon-twitter.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 51px;
+	position: relative;
+    left: 10px;
+}
+#homeSocialBar span.yt-img{
+    background-image: url("//stgpub.agilent.com:7003/cs/agilent_images/footer_social-5_icon-youtube.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 45px;
+	position: relative;
+    left: 13px;
+}
+#homeSocialBar span.gplus-img{
+    background-image: url("//stgpub.agilent.com:7003/cs/agilent_images/footer_social-7_icon-googleplus.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 43px;
+	position: relative;
+    left: 17px;
+}
+#homeSocialBar span.seperatorLine-img{
+    background-image: url("//stgpub.agilent.com:7003/cs/agilent_images/footer_social-8_iconseparator.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 39px;
+	position: relative;
+    left: 20px;
+}
+#homeSocialBar span.agilenthub-img{
+    background-image: url("//stgpub.agilent.com:7003/cs/agilent_images/Common_agilentSocialhub.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 80px;
+	position: relative;
+    left: 24px;
+}
+#homeSocialBar span.weibo-img {
+    background-image: url(//stgwww.agilent.com/cs/agilent_images/China_footer_social-1_weibo.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 46px;
+    position: relative;
+    left: 3px;	
+}
+#homeSocialBar span.baidu-img {
+    background-image: url(//stgpub.agilent.com:7003/cs/agilent_images/baidu.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 30px;
+    background-size: contain;
+    position: relative;
+    top: 13px;
+    left: 6px;
+}
+#homeSocialBar span.cnagilenthub-img {
+    background-image: url(//stgpub.agilent.com:7003/cs/agilent_images/CN_agilentSocialhub.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 158px;
+    position: relative;
+    left: 13px;
+}
+#homeSocialBar span.CNseperatorLine-img {
+    background-image: url(//stgpub.agilent.com:7003/cs/agilent_images/footer_social-8_iconseparator.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 39px;
+    position: relative;
+    left: 10px;
+}
+#homeSocialBar span.jpagilenthub-img {
+   background-image: url(//stgpub.agilent.com:7003/cs/agilent_images/JP_agilentSocialhub.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 96px;
+    position: relative;
+    left: 24px;
+}
+#homeSocialBar span.ruagilenthub-img {
+   background-image: url(//stgpub.agilent.com:7003/cs/agilent_images/RU_agilentSocialhub.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 115px;
+    position: relative;
+    left: 24px;
+}
+#homeSocialBar span.fragilenthub-img {
+   background-image: url(//stgpub.agilent.com:7003/cs/agilent_images/FR_agilentSocialhub.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 96px;
+    position: relative;
+    left: 24px;
+}
+#homeSocialBar span.bragilenthub-img {
+   background-image: url(//stgpub.agilent.com:7003/cs/agilent_images/PT-BR_agilentSocialhub.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 96px;
+    position: relative;
+    left: 24px;
+}
+#homeSocialBar span.esagilenthub-img {
+   background-image: url(//stgpub.agilent.com:7003/cs/agilent_images/ES_agilentSocialhub.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 58px;
+    width: 96px;
+    position: relative;
+    left: 24px;
+}
+/*.homeSocialBar ul li:first-child img
+{
+	top:3px;
+}*/
+/* RBE DEC APP-3958 ENDS*/
+
+/* RBE DEC APP-222 */
+.translateContainer {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1025px;
+    max-width: 1280px;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
+
+.translateContainer {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1240px;
+}
+
+.translateContainer .translateContainer {
+    min-width: 0;
+    padding: 0;
+}
+
+.translateContainer > *, .col-full {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+@media (min-width: 1200px) {
+	 .translateContainer {
+	 max-width: 1240px;
+	}
+}
+/* RBE DEC APP-222 ENDS */
+
+/* RBE DEC transparent img */
+.aglientLogoTxt img {
+    cursor: default;
+}
+/* RBE DEC transparent img  ENDS*/
+/* RBE Feb APP-13533*/
+.breadcrumb span.divider {
+	margin:5px !important;
+} 
+/* RBE Feb APP-13533 Ends*/
+
+
+/*session expiration style*/
+.sessionAbtExp{
+	padding: 0px !important;
+	z-index: 1002 !important;
+}
+.sessionExp{
+	padding: 0px !important;
+	z-index: 1002 !important;
+}
+.sessionAbtExp .ui-dialog-titlebar-close{
+	display:none;
+}
+.sessionAbtExp .ui-dialog-title{
+	font-family: roboto_condensedlight, Arial, Helvetica, sans-serif !important;
+    font-size: 24px;
+}
+.sessionAbtExp #clockdiv{
+	margin-top: 37px;
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding:0px 0px 0px 50px;
+}
+.sessionAbtExp span{
+	font-size: 24px;
+}
+.sessionAbtExp .accountContent{
+	margin-top: 2px;
+	margin-bottom: 45px;
+}
+.sessionAbtExp #sessionAbtExp { padding: 0px;}
+.sessionExp #sessionExp{padding: 0px;}
+.sessionAbtExp .expiringButton a{
+	width:224px;
+	height:37px;
+	font-size:14px;
+	font-family:robotomedium, Arial, Helvetica, sans-serif;
+	border-radius: 0px;
+	line-height: 22px;
+}
+.sessionAbtExp #keepMeIn{
+	margin-left: 13px;
+    color: #fff;
+    text-decoration: none;
+}
+.sessionAbtExp .expiringFooter{
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	height: 49px;
+    border-top: 1px solid #ccc;
+}
+.sessionExp .expiringFooter{
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	height: 49px;
+    border-top: 1px solid #ccc;
+}
+.sessionAbtExp .ui-dialog-titlebar{padding-left:49px !important;}
+.sessionExp .ui-dialog-titlebar{padding-left:49px !important;}
+.sessionAbtExp .expiringFooter div{
+	padding: 21px 0px 0px 50px;
+}
+.sessionExp .expiringFooter div{
+	padding: 19px 0px 0px 50px;
+}
+.sessionAbtExp .expiringButton{
+	margin-bottom:50px;
+}
+.sessionAbtExp #logMeOut{
+	border: 1px solid #0085D5 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    font-weight: 400;
+    background: none;
+    text-decoration: none;
+    color: #0085D5 !important;
+}
+.sessionExp .expiredPop{
+	margin-top: 46px;
+	font-family: robotoregular, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 0px 0px 0px 50px;
+}
+.sessionExp .expiringButton{
+	margin-top: 45px;
+	margin-bottom: 49px;
+}
+.sessionExp .expiringButton a{
+	width:86px;
+	height:37px;
+	font-size:14px;
+	font-family:robotomedium, Arial, Helvetica, sans-serif;
+	margin-left: 75.5%;
+	text-decoration: none;
+    color: #fff;
+	border-radius: 0px;
+}
+.sessionExp .ui-dialog-titlebar-close{
+	border: none !important;
+    background: none !important;
+}
+.sessionExp a.ui-dialog-titlebar-close.ui-corner-all:before {
+    content: "\e611";
+    font-family: FontAwesome;
+    color: #0085D5;
+    font-size: 18px;
+    font-weight: normal;
+}
+.sessionExp .ui-icon-closethick{
+	display:none;
+}
+
+.sessionExp  .ui-dialog-titlebar-close{
+	position: absolute !important;
+    right: .3em !important;
+    top: 5px !important;
+    width: auto !important;
+    margin: -10px 0 0 0 !important;
+    height: auto !important;
+    padding: 25px 1em !important;
+}
+.sessionExp .ui-dialog-titlebar,.sessionAbtExp .ui-dialog-titlebar{
+	padding: 14px 49px !important;
+	background: #edeff0;
+    border: solid 0px;
+}
+.ui-widget-overlay {
+    z-index:1001;
+}
+
+/*session expiration style*/
+
+
+/*sapce in new account reg*/
+.newsPrdPartner > .col-lg-12 > h5{
+	margin-top: 20px;
+       margin-bottom: 40px;
+	word-wrap: break-word;
+}
+/*sapce in new account reg*/
+
+/*Session Expiration page content design*/
+.left-part-expire{
+    margin-top: 47px;
+    margin-left: 20px;
+}
+.descExpire{
+	margin-top: 24px;
+    font-family: robotoregular, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #202020;
+    line-height: 16px;
+	width: 59%;
+}
+.expirationHeading{
+	font-family: roboto_condensedlight, Arial, Helvetica, sans-serif !important;
+	font-size: 28px;
+	color: #303030;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+/*Session Expiration page content design*/ 
+
+/*Home page session popup alignment*/
+.homeBody .sessionExp .expiringButton a, .homeBody .sessionAbtExp .expiringButton a{
+    font-family: robotomedium, Arial, Helvetica, sans-serif !important;
+    padding: 0px;
+    line-height: 36px;
+}
+
+.homeBody .sessionAbtExp #logMeOut {
+    padding: 0px !important;
+}
+/*Home page session popup alignment*/
